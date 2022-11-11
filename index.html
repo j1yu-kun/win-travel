@@ -1,0 +1,213 @@
+<!doctype html>
+<html style="font-family: 'Comfortaa', cursive; font-family: 'Cormorant', serif; font-family: 'Raleway', sans-serif;" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Дорожная карта</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/road-map-win-travel/src/img/win.webp">
+  <link href="/road-map-win-travel/src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Cormorant&family=Raleway&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+  <div class="h-screen overflow-hidden relative bg-slate-900 bg-[url('/road-map-win-travel/src/img/title-bg.webp')] bg-center bg-cover bg-no-repeat bg-fixed">
+    <div class="sm:text-3xl h-fit w-fit z-10 absolute m-auto left-0 right-0 top-36 lg:top-20 text-white pt-10">
+        <p>
+            LLC "WIN-TRAVEl"
+        </p>
+        <p>
+            представляет
+        </p>
+        <p>
+            Дорожную карту Иссык-Куль
+        </p>
+    </div>
+    <img src="/road-map-win-travel/src/img/win.webp"  data-value="5" class=" absolute left-0 right-0 top-1/2 lg:inset-0 w-1/2 lg:w-80 m-auto z-10" alt="">
+    <div class="h-screen bg-black opacity-25 absolute inset-0 m-auto w-full z-0"></div> 
+  </div>
+  <div x-data="{ open: false }" class="p-5 lg:p-20 relative bg-gray-100">
+    <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl w-fit font-bold mb-10">Кыргызстан – страна Туризма<br>Туризм – приоритетная сфера кыргызской экономики</h1>
+    <div class="flex flex-col lg:flex-row items-center h-fit bg-white md:w-[80%] rounded-xl overflow-hidden ">
+        <img @click="open = true" src="/road-map-win-travel/src/img/map.webp" class="lg:w-1/2 cursor-pointer" data-value="5" alt="">
+            <p class="p-3 lg:p-4 text-xs sm:text-sm md:text-base bg-white lg:w-1/2">
+                В самом центре Евразийского континента, в северо-восточной части Центральной Азии расположена прекраснейшая страна под названием Кыргызстан. <br>
+                Кыргызстан – это край удивительно красивых, живописных и величественных гор, которые, несмотря на жаркое азиатское солнце, охраняют не менее величественные ледники. Это страна шумных и стремительных горных рек с изумительно красивыми и пенистыми водопадами, страна с бесчисленным количеством потрясающих своей красотой и кристально чистой водой голубых озер, многие из которых до сих пор скрывают в себе немало секретов и тайн от людей.
+            </p>
+    </div>
+    <div x-show="open" class="fixed z-20 w-screen h-screen bg-[rgba(0,0,0,.7)] inset-0 flex items-center justify-center">
+        <iframe class="w-[80%] h-[80%] lg:w-[90%] lg:h-[90%]" src="https://www.google.com/maps/d/embed?mid=1jaiKgpTm7pvhblfN-eJsmbA83lAWY0o&ehbc=2E312F"></iframe>
+        <div class="relative">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" @click="open = false" class="w-6 h-6 text-white absolute top-[-45vh] cursor-pointer right-[-3vw]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>              
+        </div>
+    </div>
+  </div>
+  <div class="p-5 lg:p-20 flex flex-col gap-5 items-center lg:items-end bg-[url('/road-map-win-travel/src/img/mountain-bg.webp')] bg-center bg-no-repeat bg-cover bg-fixed">
+    <h1 class="ltext-lg sm:text-xl md:text-2xl lg:text-3xl w-full lg:w-fit font-bold mb-10 text-right text-white">Туризм в Кыргызстане: это горы</h1>
+    <div class="flex flex-col lg:flex-row-reverse items-center h-fit bg-white md:w-[80%] rounded-xl overflow-hidden ">
+        <img src="/road-map-win-travel/src/img/mountain-card-1.webp" class="lg:w-1/2" data-value="5" alt="">
+            <p class="p-3 lg:p-4 text-xs sm:text-sm md:text-base bg-white lg:w-1/2">
+                Туризм в Кыргызстане является одним из приоритетных и перспективных сфер экономики, так как Киргизия – это ослепительно яркое солнце и глубокие, неповторимо сказочные ущелья, великолепные песчаные пляжи с чистейшим горно-морским воздухом и мягким климатом. Это также страна плодородных зеленых долин и альпийских лугов с удивительно многообразной россыпью цветов, край неприступных и снежных перевалов, родина богатейших термоминеральных лечебных источников, дарящих человеку красоту и здоровье.
+            </p>
+    </div>
+    <div class="flex flex-col lg:flex-row items-center h-fit bg-white md:w-[80%] rounded-xl overflow-hidden">
+        <img src="/road-map-win-travel/src/img/mountain-card-2.webp" class="lg:w-1/2" data-value="5" alt="">
+            <p class="p-3 lg:p-4 text-xs sm:text-sm md:text-base bg-white lg:w-1/2">
+                Территория Киргизии простирается на 920 километров в восточно-западном направлении и на чуть более 450 километров в северо-южном направлении, составляя почти 200 тысяч квадратных километров. Много это или мало, можно представить по следующему сравнению: на территории Киргизия уместились бы Бельгия, Дания, Швейцария, Нидерланды, Словения и Черногория вместе взятые.
+            </p>
+    </div>
+  </div>
+  <div class="p-5 lg:p-20 flex flex-col gap-5 items-center lg:items-start bg-[url('/road-map-win-travel/src/img/lake_bg.webp')] bg-center bg-no-repeat bg-cover bg-fixed">
+    <h1 class="ltext-lg sm:text-xl md:text-2xl lg:text-3xl w-full lg:w-fit font-bold mb-10 text-white">Озера Кыргызстана</h1>
+    <div class="flex flex-col lg:flex-row-reverse items-center h-fit bg-white md:w-[80%] rounded-xl overflow-hidden ">
+        <img src="/road-map-win-travel/src/img/lake-card-1.webp" class="lg:w-1/2" data-value="5" alt="">
+            <p class="p-3 lg:p-4 text-xs sm:text-sm md:text-base bg-white lg:w-1/2">
+                Кыргызская природа поистине уникальна, поражающая многообразием погодных контрастов, что обусловлено расположением Киргизии сразу в нескольких так называемых «климатических зонах»: от субтропической зоны Ферганской долины, полупустынного климата Таласской и Чуйской долин и умеренно морского в Иссык-Кульской котловине до покрытых вечным снегом высокогорных ледников.
+
+            </p>
+    </div>
+    <div class="flex flex-col lg:flex-row items-center h-fit bg-white md:w-[80%] rounded-xl overflow-hidden ">
+        <img src="/road-map-win-travel/src/img/lake-card-2.webp" class="lg:w-1/2" data-value="5" alt="">
+            <p class="p-3 lg:p-4 text-xs sm:text-sm md:text-base bg-white lg:w-1/2">
+                Основной природной достопримечательностью региона является высокогорное озеро Иссык-Куль: <br>
+Площадь бассейна озера составляет 22080 тыс. кв. м, длина -178 км, ширина -60 км, глубина -668 м, объем воды -1738 куб. км. <br>
+Озеро Иссык-Куль расположено на высоте 1606 м над уровнем моря и является крупнейшим озером в горах Тянь-Шаня. Оно также относится к одним из глубочайших в мире. <br>
+На  территории Иссык-кульской области расположены одни из высочайших вершин мира -пик Победы (7439 м) и Xaн Тенгри ,
+(6995 м).
+
+            </p>
+    </div>
+    <div class="flex flex-col lg:flex-row-reverse items-center h-fit bg-white md:w-[80%] rounded-xl overflow-hidden ">
+        <img src="/road-map-win-travel/src/img/lake-card-3.webp" class="lg:w-1/2" data-value="5" alt="">
+            <p class="p-3 lg:p-4 text-xs sm:text-sm md:text-base bg-white lg:w-1/2">
+                Кыргызская Республика богата на водные ресурсы. Так, в стране насчитывается около 3 тысяч тысяч озер, при этом их общая площадь составляет 6,84 тысячи квадратных километров. Самое значительное из них – называемое «Центрально-азиатской жемчужиной» невероятно красивое озеро Иссык-Куль (в пер. с кыргызского языка означает «теплое озеро») – является одним из самых больших и глубоководных высокогорных озер на Земле. Несмотря на то, что озеро расположено на высоте более чем 1600 метров над уровнем моря, «кыргызская жемчужина» не замерзает даже в самые холодные дни зимы и является уникальной курортной зоной. Все это предопределило, что само выражение «озеро Иссык-Куль» стало самым узнаваемым туристическим брендом Киргизии.
+
+            </p>
+    </div>
+  </div>
+  <div class="flex flex-wrap gap-12 items-center justify-center text-white bg-white p-12">
+        <a href="/road-map-win-travel/src/docs/Аэропорт.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-32" src="/road-map-win-travel/src/img/airport.webp" alt="">
+            <span class="w-full">
+                <p class="text-lg md:text-3xl">Аэропорт</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/TIKA Мини-Мэр.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-32" src="/road-map-win-travel/src/img/bishkek.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Бишкек</p>
+                <p class="text-lg md:text-3xl">Мини мэр</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Этно-парк ISA-TIMUR Байтик.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-32" src="/road-map-win-travel/src/img/isa-baitik.png" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Этно-парк</p>
+                <p class="hidden lg:block">Байтик</p>
+                <p class="text-lg md:text-3xl">ISA-TIMUR</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Фуд-зона JIYU.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-32" src="/road-map-win-travel/src/img/boom.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Боомское ущелье</p>
+                <p class="text-lg md:text-3xl">Фуд-зона</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/ЭТК WIN-TRAVEL.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-48" src="/road-map-win-travel/src/img/win-travel.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Элитный туристический комплекс</p>
+                  <p class="text-lg md:text-3xl">Win Travel</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Business plan three crowns_c.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-48" src="/road-map-win-travel/src/img/three-crown.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Чолпон-Ата</p>
+                <p class="text-lg md:text-3xl">Три короны</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Горонолыжный курорт KING ARTHUR.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-36" src="/road-map-win-travel/src/img/arthur.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Каракол</p>
+                <p class="hidden lg:block">Горнолыжная база</p>
+                <p class="text-lg md:text-3xl">King Arthur</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Сельское хозяйство.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-36" src="/road-map-win-travel/src/img/logistich.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Джети-Огуз</p>
+                <p class="text-lg md:text-3xl">Агро-Бизнесс</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/ЭТК ISA-TIMUR.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-40" src="/road-map-win-travel/src/img/isa.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Тосор</p>
+                <p class="hidden lg:block">Элитный туристический комплекс</p>
+                <p class="text-lg md:text-3xl">ISA-TIMUR</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Этно-городок Барс-Хан.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-40" src="/road-map-win-travel/src/img/ethno.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">урочище Барскаун</p>
+                <p class="hidden lg:block">Этно-городок</p>
+                <p class="text-lg md:text-3xl">Барс Хан</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Порт Эдельвейс.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-32" src="/road-map-win-travel/src/img/edel.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">село Барскаун</p>
+                <p class="hidden lg:block">Порт</p>
+                <p class="text-lg md:text-3xl">Эдельвейс</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Мост.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-40" src="/road-map-win-travel/src/img/brdge.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">село Барскаун</p>
+                <p class="text-lg md:text-3xl">Мост</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Аэропорт.pdf#page=4" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between relative">
+            <img class="w-1/2 lg:w-40" src="/road-map-win-travel/src/img/airport.webp" alt="">
+            <img class="w-20 absolute right-10 bottom-24" src="/road-map-win-travel/src/img/sto.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">ПГТ Тамга</p>
+                <p class="text-lg md:text-3xl">Авиационный сервисный центр</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Курортно-Оздоровительный Центр Бар-Булак.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-40" src="/road-map-win-travel/src/img/bar-bulak.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">село Барбулак</p>
+                <p class="hidden lg:block">Курортно оздоровительный центр</p>
+                <p class="text-lg md:text-3xl">Барбулак</p>
+            </span> 
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/Крупные проекты КР (рус)_с.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-40" src="/road-map-win-travel/src/img/hes.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Джети-Огузский район</p>
+                <p class="text-lg md:text-3xl">ГЭС</p>
+            </span>
+        </div></a>
+        <a href="/road-map-win-travel/src/docs/ИНФРАСТРУКТУРНЫЕ ПРОЕКТЫ.pdf" target="_blank"><div class=" h-40 w-40 md:h-80 p-5 md:w-80 bg-emerald-800 rounded-xl flex flex-col items-center justify-between">
+            <img class="w-1/2 lg:w-40" src="/road-map-win-travel/src/img/infr.webp" alt="">
+            <span class="w-full">
+                <p class="hidden lg:block">Иссык-Кульская область</p>
+                <p class="text-lg md:text-3xl">Инфраструктурные проекты</p>
+            </span>
+        </div></a>
+    </div>
+</script>
+</body>
+</html> 
