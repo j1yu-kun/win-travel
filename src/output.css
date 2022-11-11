@@ -755,16 +755,16 @@ video {
   background-color: rgb(6 95 70 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/road-map-win-travel\/src\/img\/title-bg\.webp\'\)\] {
-  background-image: url('/road-map-win-travel/src/img/title-bg.webp'); 
+.bg-\[url\(\'\/win-travel\/src\/img\/title-bg\.webp\'\)\] {
+  background-image: url('/win-travel/src/img/title-bg.webp'); 
 }
 
-.bg-\[url\(\'\/road-map-win-travel\/src\/img\/mountain-bg\.webp\'\)\] {
-  background-image: url('/road-map-win-travel/src/img/mountain-bg.webp');
+.bg-\[url\(\'\/win-travel\/src\/img\/mountain-bg\.webp\'\)\] {
+  background-image: url('/win-travel/src/img/mountain-bg.webp');
 }
 
-.bg-\[url\(\'\/road-map-win-travel\/src\/img\/lake_bg\.webp\'\)\] {
-  background-image: url('/road-map-win-travel/src/img/lake_bg.webp');
+.bg-\[url\(\'\/win-travel\/src\/img\/lake_bg\.webp\'\)\] {
+  background-image: url('/win-travel/src/img/lake_bg.webp');
 }
 
 .bg-cover {
